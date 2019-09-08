@@ -1,7 +1,7 @@
 $primary-color: rgb(221, 221, 221);
 $secondary-color: #e91d63;
 $show-home-image: true;
-$home-image: url(../img/background.JPG);
+$home-image: url(/dist/img/background.jpg);
 $background-opacity: 1;
 // mix for transition when hovering over object or sliding in
 @mixin easeOut {
