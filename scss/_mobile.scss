@@ -1,0 +1,118 @@
+// smart phones
+@include mediaSm {
+  .main#home h1 {
+    margin-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+// tablets laptops
+@include mediaMd {
+  main {
+    // move items to center in smaller screen
+    align-items: center;
+    text-align: center;
+    //large text is moved closer
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  // move slider to top and bottom
+  .menu-nav {
+    height: 75vh; // use 75% of the screen
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh; // use 25% of the screen
+    transform: translate3d(100%, 0, 0);
+    // change image of myself to a small image.
+    .portrait {
+      background: url("../img/portriat_small.jpg");
+      width: 150px;
+      height: 150px;
+    }
+  }
+  // align grid in about page
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+  // align grid in project pages
+  .development-info {
+    grid-template-areas:
+      "prjvideo"
+      "disc";
+    grid-template-columns: repeat(1, 1fr);
+    // change size of delopment image
+    .dev-image {
+      grid-area: prjvideo;
+      margin: auto;
+      align-content: center;
+      width: 30rem;
+      height: auto;
+    }
+  }
+  // set project grid
+  .project-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3"
+      "job4"
+      "job5"
+      "job6";
+
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// desktop and laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-info {
+    grid-template-areas:
+      "job1" "job2"
+      "job3" "job4"
+      "job5" "job6";
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Widescreen
+@include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
