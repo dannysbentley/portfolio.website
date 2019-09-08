@@ -94,9 +94,9 @@
   box-sizing: border-box; }
 
 body {
-  background: url(/dist/img/background.jpg);
-  background-attachment: fixed;
+  background-image: url(/dist/img/background.jpg);
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -193,7 +193,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 1.5px #fff solid;
+    border-color: #e91d63; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #e91d63;
