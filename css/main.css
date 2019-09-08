@@ -94,8 +94,6 @@
   box-sizing: border-box; }
 
 body {
-  background: #dddddd;
-  color: #000;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -103,16 +101,19 @@ body {
   body#bg-img {
     background: url(../img/background.JPG);
     background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: "";
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(221, 221, 221, 0.9); }
+    background-size: cover;
+    /*
+      &:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+
+      }*/ }
 
 h1,
 h2,

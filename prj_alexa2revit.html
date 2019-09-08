@@ -73,7 +73,19 @@
         ></iframe>
         <div class="disc">
           <h3 class="text-secondary">Description</h3>
-          <p>Using Amazon Alexa to create Revit elements.</p>
+          <p>
+            An Alexa to Revit prototype uses voice activation to generate
+            geometry in Revit. The Alexa also gives feedback such as quantities
+            from a schedule in Revit.
+          </p>
+          <p>
+            The project uses Alexa Skills Developer Kit. The skill is given a
+            name such as ‘the architect’. The payload is given as a JSON file
+            which is parsed out using Python and the library Pandas. The Pandas
+            writes to a CSV file that has 0 and 1 for switchboard. Dynamo is
+            monitoring the switchboard CSV file and runs the appropriate command
+            in Revit.
+          </p>
         </div>
       </div>
     </main>

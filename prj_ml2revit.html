@@ -71,10 +71,23 @@
         <div class="disc">
           <h3 class="text-secondary">Description</h3>
           <p>
-            A trained convolutional neural network (CNN) to classify an image
-            drawn by a user. The classified image feeds it's classification to a
-            hidden terminal which Revit has an event handler to read the
-            classidfication and send a payload to generate a 3D object.
+            Machine learning to Revit is using a Convolution Neural Network
+            (CNN) prototype that uses an image classifier to predict a sketch of
+            someone in Revit. The image is classified and a 3D object is placed
+            in the Revit project.
+          </p>
+          <p>
+            The architecture for this CNN is two layers with a RELU, max-pooling
+            between each layer and Adam optimizer. Trained on 4 images each with
+            10,000 images downloaded from Google Quick Draw. The use of 7,000
+            for training and 3,000 for testing.
+          </p>
+          <p>
+            Revit has a small sketch interface that saves the image file in a
+            folder that is being monitored by a .h5 prediction file. The
+            classification is sent to Revit using a hidden terminal. Revit is
+            monitoring the terminal and reads the payload. It gets the correct
+            family from the Revit model and places it in the Revit project.
           </p>
         </div>
       </div>
