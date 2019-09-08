@@ -6,9 +6,9 @@
 }
 // set back ground overlay and text
 body {
-  @include background;
-  //background: $primary-color;
-  //color: set-text-color($primary-color);
+  background: url(/dist/img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 
   height: 100%;
   margin: 0;
