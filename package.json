@@ -14,5 +14,6 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Danny Bentley",
-  "license": "MIT"
+  "license": "MIT",
+  "_comment": "command line - npm run delpoy and gh-pages -d dist"
 }
