@@ -15,5 +15,7 @@
   },
   "author": "Danny Bentley",
   "license": "MIT",
-  "_comment": "command line - npm run delpoy and gh-pages -d dist"
+  "_comment_local": "npm run sass",
+  "_comment_deploy": "command line - npm run delpoy and gh-pages -d dist"
+  
 }

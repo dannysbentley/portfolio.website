@@ -53,13 +53,16 @@
   .about-info {
     grid-template-areas:
       "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
-
+      "bio";
     grid-template-columns: 1fr;
   }
+  .work-info{
+    grid-template-areas: 
+    "job1"
+    "job2"
+    "job3";
+    grid-template-columns: 1fr;
+  } 
   // align grid in project pages
   .development-info {
     grid-template-areas:

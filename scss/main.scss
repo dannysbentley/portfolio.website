@@ -1,5 +1,8 @@
 @import "config";
 @import "menu";
+// to update local css  using sass run below
+// npm run sass 
+// to deploy on github pages 
 // npm run deploy
 // gh-pages -d dist
 * {
@@ -80,15 +83,15 @@ main {
     }
   }
 }
+
 // about page settings
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 10px;
   // use the grid for the about page
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "bioimage bio bio";
+  grid-template-columns: repeat(3, 5fr);
+
   // bio image settings
   .bio-image {
     grid-area: bioimage;
@@ -102,6 +105,13 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
+}
+// work history
+.work-info {
+  display: grid;
+  grid-gap: 10px;
+  grid-template: "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
   // jobs set to grid.
   .job-1 {
     grid-area: job1;
@@ -116,11 +126,12 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten(white, 2);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border: $secondary-color 1px solid;
   }
 }
+
 //my projects settings
 .project-info {
   display: grid;
@@ -171,9 +182,9 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
+    font-size: 1.2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1.0rem 2.0rem;
     margin-bottom: 3rem;
     @include easeOut;
 
@@ -245,5 +256,6 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
 // add mobile settings
 @import "mobile";
