@@ -1,11 +1,22 @@
 // smart phones
 @include mediaSm {
+  main {
+    text-align: center;
+    align-items: center;
+  }
+
   .main#home h1 {
     margin-top: 10vh;
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+  .dev-image {
+    margin: auto;
+    align-content: center;
+    width: 5rem;
+    height: auto;
   }
 }
 
@@ -56,20 +67,20 @@
       "bio";
     grid-template-columns: 1fr;
   }
-  .work-info{
-    grid-template-areas: 
-    "job1"
-    "job2"
-    "job3";
+  .work-info {
+    grid-template-areas:
+      "job1"
+      "job2"
+      "job3";
     grid-template-columns: 1fr;
-  } 
+  }
   // align grid in project pages
   .development-info {
     grid-template-areas:
       "prjvideo"
       "disc";
     grid-template-columns: repeat(1, 1fr);
-    // change size of delopment image
+    // change size of devlopment image
     .dev-image {
       grid-area: prjvideo;
       margin: auto;

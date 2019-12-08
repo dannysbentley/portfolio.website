@@ -271,12 +271,20 @@ main {
   height: 60px; }
 
 @media screen and (max-width: 500px) {
+  main {
+    text-align: center;
+    align-items: center; }
   .main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .dev-image {
+    margin: auto;
+    align-content: center;
+    width: 5rem;
+    height: auto; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   main {
     align-items: center;
     text-align: center; }
@@ -323,7 +331,7 @@ main {
   .projects {
     grid-template-columns: repeat(1, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 1000px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .project-info {
