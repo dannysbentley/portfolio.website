@@ -1,8 +1,8 @@
 @import "config";
 @import "menu";
 // to update local css  using sass run below
-// npm run sass 
-// to deploy on github pages 
+// npm run sass
+// to deploy on github pages
 // npm run deploy
 * {
   box-sizing: border-box;
@@ -158,7 +158,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
 
   // profile image settings
   img {
@@ -183,7 +183,7 @@ main {
   div {
     font-size: 1.2rem;
     border: 3px #fff solid;
-    padding: 1.0rem 2.0rem;
+    padding: 1rem 2rem;
     margin-bottom: 3rem;
     @include easeOut;
 
@@ -225,6 +225,12 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "prjvideo disc disc";
+
+  img {
+    width: 100%;
+    border: 1.5px #fff solid;
+    border-color: $secondary-color;
+  }
 
   grid-template-columns: repeat(2, 1fr);
 

@@ -196,7 +196,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 2fr); }
   .projects img {
     width: 100%;
     border: 1.5px #fff solid;
@@ -215,7 +215,7 @@ main {
   .boxes div {
     font-size: 1.2rem;
     border: 3px #fff solid;
-    padding: 1.0rem 2.0rem;
+    padding: 1rem 2rem;
     margin-bottom: 3rem;
     transition: all 0.5 ease-out; }
     .boxes div:hover {
@@ -246,6 +246,10 @@ main {
   grid-gap: 30px;
   grid-template-areas: "prjvideo disc disc";
   grid-template-columns: repeat(2, 1fr); }
+  .development-info img {
+    width: 100%;
+    border: 1.5px #fff solid;
+    border-color: #e91d63; }
   .development-info .dev-image {
     grid-area: prjvideo;
     margin: auto;
