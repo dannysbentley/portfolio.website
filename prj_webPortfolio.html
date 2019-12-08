@@ -10,8 +10,9 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     />
-    <title>About Me</title>
+    <title>JS sass portfolio</title>
   </head>
+
   <!--navigation-->
   <body id="bg-img">
     <head>
@@ -36,12 +37,12 @@
               About Me
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="work.html" class="nav-link">
               My Work
             </a>
           </li>
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="contact.html" class="nav-link">
               Contact Me
             </a>
@@ -51,42 +52,50 @@
     </head>
 
     <!--main page Contact -->
-    <main id="contact">
+    <main id="prj-web">
       <!--heading with style and color-->
-      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
+      <h1 class="lg-heading">
+        sass Javascript <span class="text-secondary">Website</span>
+      </h1>
       <h2 class="sm-heading">
-        How you can reach me.
+        Reactive website using ES6 and sass
       </h2>
-      <!--boxes for information-->
-      <div class="boxes">
-        <div>
-          <a href = 'mailto: danny_bentley@hotmail.com'>
-          <span class="text-secondary">
-            Email:
-          </span>
-          </a>
-          danny_bentley@hotmail.com
-        </div>
-        <div>
+      <!--GAN gif and description-->
+      <div class="development-info">
+        <img
+          src="/dist/img/projects/webPortfolio.png"
+          alt="gan"
+          class="dev-image"
+        />
 
-          <a href="https://twitter.com/danbentley" target="_blank">
-          <span class="text-secondary" >
-            Twitter:
-          </span>
-          </a>
-          danbentley
-        </div>
-
-        <a href="https://www.linkedin.com/in/danny-bentley-88014a186/" target="_blank">
-        <div>
-          <span class="text-secondary">
-            LinkedIn:
-          </span>
-          </a>
-          danny-bentley
+        <div class="disc">
+          <h3 class="text-secondary">Description</h3>
+          <p>
+            This is a reactive website to showcase the extent of my projects.
+            From creating websites to developing c# addins and architecture
+            design in Revit.
+          </p>
+          <p>
+            The idea is to showcase my endless pursuit of technology in all
+            aspects of computer science.
+          </p>
+          <div class="icons">
+            <a
+              href="https://github.com/dannysbentley/portfolio.website"
+              target="_blank"
+              >source code:
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
         </div>
       </div>
     </main>
+
+    <!--copy write information-->
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+
     <!--Javascript file-->
     <script src="js/main.js"></script>
   </body>
