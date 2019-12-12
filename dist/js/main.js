@@ -4,7 +4,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
-var video = document.getElementById("preojct-video");
+var form = document.getElementById("wrapper");
 
 // Set Inital State of menue
 let showMenu = false;
@@ -17,10 +17,6 @@ function toggleMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
-    // remove controls from video
-    if (video != null) {
-      toggleControls();
-    }
 
     navItems.forEach(item => item.classList.add("show"));
 
@@ -33,20 +29,8 @@ function toggleMenu() {
     menuBranding.classList.remove("show");
     navItems.forEach(items => items.classList.remove("show"));
 
-    // add controls from video
-    if (video != null) {
-      toggleControls();
-    }
     // Set Menu State
     showMenu = false;
-  }
-}
-
-function toggleControls() {
-  if (video.hasAttribute("controls")) {
-    video.removeAttribute("controls");
-  } else {
-    video.setAttribute("controls", "controls");
   }
 }
 
